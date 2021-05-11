@@ -45,8 +45,11 @@ class App extends Component {
 
   render(){
     return ( 
-      <div className = "container" >        
+      <div className = "container" >   
+        <h1>React App</h1>
+        <div>Add a character with a name and a job to the table</div>     
         <Table characterData={this.state.characters} removeCharacter={this.removeCharacter}/> 
+        <h1>Add New</h1>
         <Form handleSubmit={this.handleSubmit} />
       </div>
     );
